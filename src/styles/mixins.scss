@@ -1,0 +1,76 @@
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin verticalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin horizontalCenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexLayout {
+  width: 50%;
+  height: 100vh;
+}
+
+@mixin flexCustom($justify, $alignitems) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignitems;
+}
+
+@mixin fontSelection($fontFamily, $fontSize) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin detailTitle($ffamily, $fsize, $color) {
+  color: $color;
+  font-size: $fsize;
+  font-family: $ffamily;
+  font-weight: 600;
+  padding: 3.5rem 2rem 2rem 0rem;
+  width: 100%;
+}
+
+@mixin buttons($border, $color, $background) {
+  color: $color;
+  background-color: $background;
+  border: $border;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+@mixin inputField($border, $background) {
+  border: $border;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: $background;
+  color: hsl(0, 0%, 20%);
+}
+
+@mixin errorMessage($fontSize, $fontFamily) {
+  color: $crimson;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}

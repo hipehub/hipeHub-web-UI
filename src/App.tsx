@@ -1,7 +1,10 @@
-import './App.css';
+// import './App.scss';
 
 function App() {
-  return <div className="App">hii from k</div>;
+  const activeSite = true
+  return <div className="App">
+    <div className='App__data'>data scss check</div>
+    </div>;
 }
 
 export default App;
